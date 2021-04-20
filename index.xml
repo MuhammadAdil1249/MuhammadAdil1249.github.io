@@ -2,42 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home</title>
-    <link>http://www.example.com/</link>
+    <link>https://muhammadadil1249.github.io/</link>
     <description>Recent content on Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://muhammadadil1249.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://www.example.com/about-me/</link>
+      <link>https://muhammadadil1249.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/about-me/</guid>
-      <description> Hi, Adil here    I am a Computer Science student at National Universty of Science &amp;amp; Technology.
-My Interests are in :
-  Web development
-  UI UX Designing
-  Graphic Designing
-  Photography
-   </description>
+      <guid>https://muhammadadil1249.github.io/about/</guid>
+      <description>Hi, Adil here    I am a Computer Science student at National Universty of Science &amp;amp; Technology. I did my Intermediate from GCU, Lahore.
+So far, I have studied programming language such as C, C++ and Java. I have also learned a little bit of
+ Adobe XD Adobe Illustrator Adobe Photoshop.  My Interests are in :
+ Web development UI UX Designing Graphic Designing Photography  You can check out my Photography here.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://www.example.com/contact/</link>
+      <link>https://muhammadadil1249.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/contact/</guid>
+      <guid>https://muhammadadil1249.github.io/contact/</guid>
       <description>Contact me    You can contact me via email.
  Email Address : adilshahid193@gmail.com  </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://www.example.com/posts/</link>
+      <link>https://muhammadadil1249.github.io/posts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/</guid>
-      <description>Latest Post    Building an 64-bit Operating System    Here, I will elaborate you guys that how to make an operating system. For this we need almost three softwares including:
+      <guid>https://muhammadadil1249.github.io/posts/</guid>
+      <description>Latest Post     Building an 64-bit Operating System    Here, I will elaborate you guys that how to make an operating system. For this we need almost three softwares including:
   Docker
   VS code
   QEMU
