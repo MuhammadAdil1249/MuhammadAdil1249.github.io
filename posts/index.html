@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="Muhammad Adil Shahid">
+    <meta name="description" content="Latest Post    Building an 64-bit Operating System    Here, I will elaborate you guys that how to make an operating system. For this we need almost three softwares including:
+  Docker
+  VS code
+  QEMU
+  For step by step guide of QEMU installation, click here.
+  Procedure      i. Installing the Softwares    First of all, you need to install all these three softwares.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Latest Post    Building an 64-bit Operating System    Here, I will elaborate you guys that how to make an operating system. For this we need almost three softwares including:
+  Docker
+  VS code
+  QEMU
+  For step by step guide of QEMU installation, click here.
+  Procedure      i. Installing the Softwares    First of all, you need to install all these three softwares."/>
+
+    <meta property="og:title" content="" />
+<meta property="og:description" content="Latest Post    Building an 64-bit Operating System    Here, I will elaborate you guys that how to make an operating system. For this we need almost three softwares including:
+  Docker
+  VS code
+  QEMU
+  For step by step guide of QEMU installation, click here.
+  Procedure      i. Installing the Softwares    First of all, you need to install all these three softwares." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.example.com/posts/" /><meta property="article:section" content="" />
+
+
+
+
+
+    <title>
+   · Home
+</title>
+
+    
+      <link rel="canonical" href="http://www.example.com/posts/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.04d6bedce375c4fcb6bf1e2c89e70f9e45a3431f1926a9f5f63749517718d366.css" integrity="sha256-BNa&#43;3ON1xPy2vx4siecPnkWjQx8ZJqn19jdJUXcY02Y=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.dde8a61eb31a32353b4baf3d9113f03c4ea2a8ca9bb736f59ca2d2b2cb664f0b.css" integrity="sha256-3eimHrMaMjU7S689kRPwPE6iqMqbtzb1nKLSsstmTws=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.82.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Home
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://www.example.com/posts/">
+          
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="latest-post">
+  Latest Post
+  <a class="heading-link" href="#latest-post">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h3 id="building-an--64-bit-operating-system">
+  Building an  64-bit Operating System
+  <a class="heading-link" href="#building-an--64-bit-operating-system">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Here, I will elaborate you guys that how to make an         operating system. For this we need almost three softwares including:</p>
+<ol>
+<li>
+<p>Docker</p>
+</li>
+<li>
+<p>VS code</p>
+</li>
+<li>
+<p>QEMU</p>
+</li>
+</ol>
+<p><em>For step by step guide of QEMU installation, click</em> <a href="https://dev.to/whaleshark271/using-qemu-on-windows-10-home-edition-4062"><em>here.</em></a></p>
+<ul>
+<li>
+<h3 id="procedure">
+  Procedure
+  <a class="heading-link" href="#procedure">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+</li>
+</ul>
+<h4 id="i-installing-the-softwares">
+  i. Installing the Softwares
+  <a class="heading-link" href="#i-installing-the-softwares">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>First of all, you need to install all these three softwares. I am dropping their links below from where you can download your softwares</p>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th style="text-align:center">Links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Docker</td>
+<td style="text-align:center"><a href="https://www.docker.com/products/docker-desktop">https://www.docker.com/products/docker-desktop</a></td>
+</tr>
+<tr>
+<td>VSCode</td>
+<td style="text-align:center"><a href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a></td>
+</tr>
+<tr>
+<td>QEMU</td>
+<td style="text-align:center"><a href="https://www.qemu.org/download/">https://www.qemu.org/download/</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="ii-enable-windows-subsystem-for-linux">
+  ii. Enable Windows Subsystem for Linux
+  <a class="heading-link" href="#ii-enable-windows-subsystem-for-linux">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>Open PowerShell as administrator and enter this command:</p>
+<p><code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart</code></p>
+<h4 id="iii-install-wsl2-on-windows">
+  iii. Install WSL2 on Windows
+  <a class="heading-link" href="#iii-install-wsl2-on-windows">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>There are also a couple of pre-requisites for using WSL2 on Windows 10. You need to be on the following versions:</p>
+<ul>
+<li>For x64 systems: Version 1903 or higher, with Build 18362 or higher.</li>
+<li>For ARM64 systems: Version 2004 or higher, with Build 19041 or higher.</li>
+</ul>
+<p>If you have anything lower, you&rsquo;ll need to run Windows Update before going any further.</p>
+<p>Assuming that&rsquo;s all good, the rest is straightforward.</p>
+<h4 id="iv-enabling-virtual-machine">
+  iv. Enabling Virtual Machine
+  <a class="heading-link" href="#iv-enabling-virtual-machine">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>The quickest way to do it is in PowerShell. Open PowerShell as administrator and enter this command:</p>
+<p><code>dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart</code></p>
+<h4 id="v-downloading-and-installing-wsl2">
+  v. Downloading and installing WSL2
+  <a class="heading-link" href="#v-downloading-and-installing-wsl2">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>The next part takes only a couple of steps.</p>
+<ul>
+<li>Download the WSL2 Kernel update.</li>
+<li>Run the installer.</li>
+<li>When prompted for elevated permissions, click yes.
+Once the installer has done its thing, you&rsquo;ll now have WSL2 successfully installed on your PC.</li>
+</ul>
+<h4 id="vi-setting-wsl2-as-default">
+  vi. Setting WSL2 as default
+  <a class="heading-link" href="#vi-setting-wsl2-as-default">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>If you want everything to run on WSL2 as soon as you install it, you can set it as the default version.</p>
+<p><code>wsl --set-default-version 2</code></p>
+<h4 id="vi-image-building-commands">
+  vi. Image building commands
+  <a class="heading-link" href="#vi-image-building-commands">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>Firstly, building an image for building environment.</p>
+<ul>
+<li><code>docker build buildenv -t myos-buildenv</code></li>
+</ul>
+<p>Then enter into the build environment.</p>
+<ul>
+<li>Linux or MacOS: <code>docker run --rm -it -v &quot;$pwd&quot;:/root/env myos-buildenv</code></li>
+<li>Windows (CMD): <code>docker run --rm -it -v &quot;%cd%&quot;:/root/env myos-buildenv</code></li>
+<li>Windows (PowerShell): <code>docker run --rm -it -v &quot;${pwd}:/root/env&quot; myos-buildenv</code></li>
+</ul>
+<p>If you are having trouble with an unshared drive, ensure your docker daemon has access to the drive you&rsquo;re development environment is in. For Docker Desktop, this is in <strong>Settings &gt; Shared Drives</strong> or <strong>Settings &gt; Resources &gt; File Sharing.</strong></p>
+<p>Build for x86 (other architectures may come in the future):</p>
+<p><code>make build-x86_64</code></p>
+<p>For leaving the build environment just type <code>exit.</code></p>
+<h4 id="vii-emulate">
+  vii. Emulate
+  <a class="heading-link" href="#vii-emulate">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>Emulating OS using QEMU</p>
+<p><code>qemu-system-x86_64 -cdrom dist/x86_64/kernel.iso</code></p>
+<p><em>When building your operating system, if changes to your code fail to compile, ensure your QEMU emulator has been closed, as this will block writing to kernel.iso.</em>
+<em>Alternatively, you should be able to load the operating system on a USB drive and boot into it when you turn on your computer. (I haven&rsquo;t actually tested this yet.)</em></p>
+<h4 id="viii-cleaning-up">
+  viii. Cleaning up
+  <a class="heading-link" href="#viii-cleaning-up">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>Remove the build-evironment image:</p>
+<p><code>docker rmi myos-buildenv -f</code></p>
+<hr>
+<h2 id="online-tutorials">
+  Online Tutorials
+  <a class="heading-link" href="#online-tutorials">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><a href="https://www.youtube.com/watch?v=FkrpUaGThTQ&amp;t=16s">Write Your Own 64-bit Operating System Kernel #1 - Boot code and multiboot header</a></p>
+<p><a href="https://www.youtube.com/watch?v=wz9CZBeXR6U&amp;t=166s">Write Your Own 64-bit Operating System Kernel #2 - Stack, long mode and printing using C code</a></p>
+
+  </article>
+</section>
+
+  
+
+      </div>
+
+      
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.235666b114443867d43eeb5799d51f6252965e5163f338285e113fa381d3d27e.js" integrity="sha256-I1ZmsRREOGfUPutXmdUfYlKWXlFj8zgoXhE/o4HT0n4="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

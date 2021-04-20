@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home</title>
+    <link>http://www.example.com/</link>
+    <description>Recent content on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://www.example.com/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/about-me/</guid>
+      <description> Hi, Adil here    I am a Computer Science student at National Universty of Science &amp;amp; Technology.
+My Interests are in :
+  Web development
+  UI UX Designing
+  Graphic Designing
+  Photography
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://www.example.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/contact/</guid>
+      <description>Contact me    You can contact me via email.
+ Email Address : adilshahid193@gmail.com  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://www.example.com/posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/</guid>
+      <description>Latest Post    Building an 64-bit Operating System    Here, I will elaborate you guys that how to make an operating system. For this we need almost three softwares including:
+  Docker
+  VS code
+  QEMU
+  For step by step guide of QEMU installation, click here.
+  Procedure      i. Installing the Softwares    First of all, you need to install all these three softwares.</description>
+    </item>
+    
+  </channel>
+</rss>
