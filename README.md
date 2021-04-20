@@ -1,4 +1,4 @@
-#Procedure for Hugo site
+# Procedure for Hugo site
 * Install Hugo
 * Install Hugo theme online
 * Make changes in config.toml
